@@ -17,6 +17,7 @@ public class EnewyFollow : MonoBehaviour
     public float startTimeBtwAttack;
     public float cd = 2f;
     public bool isCD;
+    public GameObject[] hil;
 
 
     void Start()
@@ -61,8 +62,6 @@ public class EnewyFollow : MonoBehaviour
                 //Берём у этого объекта компонент Health (Скрипт который на нём висит)
                 other.gameObject.GetComponent<Health>().TakeHit(damager);
             }
-            //И вызываем функцию получения урона, в агрументе переменная урона
-          //  health.TakeHit(damager);
         }
 
     }
@@ -88,5 +87,11 @@ public class EnewyFollow : MonoBehaviour
         isCD = true;
         yield return new WaitForSeconds(cd);
         isCD = false;
+    }
+
+    public void SpawnHil()
+    {
+        Debug.Log("HilSpawn");
+        Instantiate(hil[0], transform.position , Quaternion.identity);
     }
 }

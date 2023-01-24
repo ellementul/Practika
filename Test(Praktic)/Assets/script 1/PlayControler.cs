@@ -10,6 +10,8 @@ public class PlayControler : MonoBehaviour
     private Animator anim;
     private float hormoveInputer;
     private float vermoveInputer;
+    public GameObject Player;
+    public Transform[] moveSpots;
 
     void Start()
     {
@@ -51,5 +53,9 @@ public class PlayControler : MonoBehaviour
         {
             anim.SetBool("isrunl", false);
         }
+    }
+    public void SpawnPoint()
+    {
+        Player.transform.position = moveSpots[0].transform.position;
     }
 }

@@ -22,6 +22,12 @@ public class Health : MonoBehaviour
         //Если здоровье меньше 0 - уничтожить объект на котором весит этот скрипт
         if (health <= 0)
         {
+            // if (hil[0] != null) { 
+            //    Debug.Log("HilSpawn");
+            if (gameObject.tag == "Vrag") 
+            { 
+                GetComponent<EnewyFollow>().SpawnHil();
+            }
             Destroy(gameObject);
         }
             

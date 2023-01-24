@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -940,7 +940,7 @@ TextureImporter:
       all chel_30: 1425608196
       all chel_24: -1178408771
       all chel_0: 1684419435
-      all chel_4: 341026390
+      all chel_35: -1301256089
       all chel_33: -836999894
       all chel_25: -391486369
       all chel_21: -1419168347
@@ -973,8 +973,8 @@ TextureImporter:
       all chel_15: -1712495285
       all chel_1: -842757835
       all chel_8: 1670770711
+      all chel_4: 341026390
       all chel_11: 1031908130
-      all chel_35: -1301256089
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
